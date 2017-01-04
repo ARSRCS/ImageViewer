@@ -5,11 +5,8 @@ import imageviewer.ui.ImageDisplay;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Graphics;
-import java.awt.PopupMenu;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
@@ -45,6 +42,11 @@ public class SwingImageDisplay extends JPanel implements ImageDisplay{
             }
             
         };
+    }
+
+    @Override
+    public Image currentImage() {
+        return image;
     }
 
 }
